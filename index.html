@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Vim / Nvim</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="wrapper-corner">
+      <div class="text-manip">
+        <h1 class="text-manip-header">Text Manipulation</h1>
+        <table>
+          <tr>
+            <td class="key">i</td>
+            <td class="key-desc">insert before cursor</td>
+            <td class="key">r</td>
+            <td class="key-desc">replace single character</td>
+          </tr>
+          <tr>
+            <td class="key">I</td>
+            <td class="key-desc">insert at start of line</td>
+            <td class="key">cc</td>
+            <td class="key-desc">replace line</td>
+          </tr>
+          <tr>
+            <td class="key">a</td>
+            <td class="key-desc">insert after cursor</td>
+            <td class="key">cw</td>
+            <td class="key-desc">replace to end of word</td>
+          </tr>
+          <tr>
+            <td class="key">A</td>
+            <td class="key-desc">insert at end of line</td>
+            <td class="key">c$</td>
+            <td class="key-desc">replace to end of line</td>
+          </tr>
+          <tr>
+            <td class="key">o</td>
+            <td class="key-desc">add new line below cursor</td>
+            <td class="key">s</td>
+            <td class="key-desc">substitute character</td>
+          </tr>
+          <tr>
+            <td class="key">O</td>
+            <td class="key-desc">add new line above cursor</td>
+            <td class="key">S</td>
+            <td class="key-desc">substitute line</td>
+          </tr>
+          <tr>
+            <td class="key">ea</td>
+            <td class="key-desc">insert at end of word</td>
+            <td class="key">u</td>
+            <td class="key-desc">undo</td>
+          </tr>
+          <tr>
+            <td class="key">Esc</td>
+            <td class="key-desc">exit insert mode</td>
+            <td class="key">Ctrl + r</td>
+            <td class="key-desc">redo</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="wrapper-center" style="align-self: flex-end;">
+      <div class="cross-top">
+        <table cellspacing="0">
+          <tr class="cross-split">
+            <td class="large">H</td>
+            <td class="highlight">jump to first line in document</td>
+          </tr>
+          <tr class="cross-split">
+            <td class="large">j</td>
+            <td class="highlight">move cursor up</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="wrapper-corner">
+      <div class="visual-mode">
+        <h1 class="visual-mode-header">Visual Mode</h1>
+        <table>
+          <tr>
+            <td class="key">v</td>
+            <td class="key-desc">enter visual mode</td>
+            <td class="key">~</td>
+            <td class="key-desc">change case</td>
+          </tr>
+          <tr>
+            <td class="key">V</td>
+            <td class="key-desc">enter linewise visual mode</td>
+            <td class="key">Esc</td>
+            <td class="key-desc">exit visual mode</td>
+          </tr>
+          <tr>
+            <td class="key">CTRL + v</td>
+            <td class="key-desc">start visual block mode</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+          <tr>
+            <td class="key">&gt;</td>
+            <td class="key-desc">shift text left</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+          <tr>
+            <td class="key">&lt;</td>
+            <td class="key-desc">shift text right</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+          <tr>
+            <td class="key">&gt;&gt;</td>
+            <td class="key-desc">shift left by shiftwidth</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+          <tr>
+            <td class="key">&lt;&lt;</td>
+            <td class="key-desc">shift right by shiftwidth</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+          <tr>
+            <td class="key">==</td>
+            <td class="key-desc">auto-indent line</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="wrapper-middle-side">
+      <div class="cross-mid-left">
+        <table cellspacing="0">
+          <tr class="row large">
+            <td>0</td>
+            <td>B</td>
+            <td>b</td>
+            <td>h</td>
+          </tr>
+          <tr class="row-desc highlight">
+            <td>move to start of line</td>
+            <td>move to start of previous word (puncuation)</td>
+            <td>move to start of previous word</td>
+            <td>move cursor left</td>
+          <tr>
+        </table>
+      </div>
+    </div>
+    <div class="wrapper-middle">
+      <div class="cross-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1022px-Vimlogo.svg.png" alt="Vim Logo">
+      </div>
+    </div>
+    <div class="wrapper-middle-side">
+      <div class="cross-mid-right">
+        <table cellspacing="0">
+          <tr class="row large highlight">
+            <td>l</td>
+            <td>w</td>
+            <td>W</td>
+            <td>$</td>
+          </tr>
+          <tr class="row-desc">
+            <td>move cursor right</td>
+            <td>move to start of next word</td>
+            <td>move to start of next work (puncuation)</td>
+            <td>move to end of line</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="wrapper-corner">
+      <div class="text-manip-cont">
+        <table>
+          <tr>
+            <td class="key">y</td>
+            <td class="key-desc">yank/copy</td>
+            <td class="key">D</td>
+            <td class="key-desc">delete to end of line</td>
+          </tr>
+          <tr>
+            <td class="key">yy</td>
+            <td class="key-desc">yank a line</td>
+            <td class="key">x</td>
+            <td class="key-desc">delete character</td>
+          </tr>
+          <tr>
+            <td class="key">yw</td>
+            <td class="key-desc">yank a word</td>
+            <td class="key">/string</td>
+            <td class="key-desc">search for "string"</td>
+          </tr>
+          <tr>
+            <td class="key">y$</td>
+            <td class="key-desc">yank to end of line</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+          <tr>
+            <td class="key">p</td>
+            <td class="key-desc">paste after cursor</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+          <tr>
+            <td class="key">P</td>
+            <td class="key-desc">past before cursor</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+          <tr>
+            <td class="key">dd</td>
+            <td class="key-desc">delete/cut a line</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+          <tr>
+            <td class="key">dw</td>
+            <td class="key-desc">delete a word</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+        </table>
+        <h1 class="text-manip-cont-header">Text Manipulation Cont.</h1>
+      </div>
+    </div>
+    <div class="wrapper-center" style="align-self: flex-start;">
+      <div class="cross-mid">
+        <table cellspacing="0">
+          <tr class="cross-split">
+            <td class="large highlight">j</td>
+            <td>move cursor down</td>
+          </tr>
+          <tr class="cross-split">
+            <td class="large highlight">G</td>
+            <td>jump to last line in document</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="wrapper-corner">
+      <div class="save-exit">
+        <table>
+          <tr>
+            <td class="key">ZZ</td>
+            <td class="key-desc">save and quit</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+          <tr>
+            <td class="key">ZQ</td>
+            <td class="key-desc">quit without saving</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+          <tr>
+            <td class="key">:w</td>
+            <td class="key-desc">write / save</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+          <tr>
+            <td class="key">:q</td>
+            <td class="key-desc">quit</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+          <tr>
+            <td class="key">:wq</td>
+            <td class="key-desc">write and quit</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+          <tr>
+            <td class="key">:x</td>
+            <td class="key-desc">write and quit</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+          <tr>
+            <td class="key">:q!</td>
+            <td class="key-desc">force quit without saving</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+          <tr>
+            <td class="key">:qa</td>
+            <td class="key-desc">quit all vim buffers</td>
+            <td class="key"></td>
+            <td class="key-desc"></td>
+          </tr>
+        </table>
+        <h1 class="save-exit-header">Save &amp; Exit</h1>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
