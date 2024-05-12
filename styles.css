@@ -41,9 +41,17 @@ h1 {
 }
 
 .save-exit-header {
-  background-color: #4949C1;
+  background: conic-gradient( black 0deg 180deg, #4949C1 180deg 360deg );
   -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  
+}
+
+.cross-center {
+  background: conic-gradient( #1D3545 0deg 98deg, 
+                              #27475C 98deg 180deg,
+                              #1D3545 180deg 262deg,
+                              #27475C 262deg 360deg); 
 }
 
 .main-top,
