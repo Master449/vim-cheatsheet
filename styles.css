@@ -54,6 +54,18 @@ h1 {
                               #27475C 262deg 360deg); 
 }
 
+.cross-split {
+  height: 100%;
+}
+
+.fill-half {
+  height: 50%;
+}
+
+.fill-all {
+  height: 100%;
+}
+
 .main-top,
 .main-middle,
 .main-bottom {
@@ -63,6 +75,7 @@ h1 {
 
 .key {
   width: 10%;
+  height: 30px;
   text-align: center;
 }
 
@@ -92,6 +105,10 @@ table {
   font-size: 56px;
 }
 
+.top-bottom-cross {
+  height: 100%;
+}
+
 .highlight {
   background-color:  #1E3647;
 }
@@ -119,11 +136,10 @@ table {
 }
 
 .flex-items:nth-child(2) {
-  display: block;
-  flex-grow: 0;
+  flex-grow: 1;
   flex-shrink: 1;
   flex-basis: auto;
-  align-self: auto;
+  align-self: stretch;
   order: 0;
   width: 10%;
 }
@@ -206,7 +222,7 @@ table {
 
 .wrapper-center {
   width: 10%;
-  height: 45%;
+  align-self: stretch;
 }
 
 .wrapper-middle-side {
@@ -243,3 +259,4 @@ table {
   padding-top: 15%;
   padding-bottom: 15%;
 }
+
