@@ -45,7 +45,6 @@ def read_lua_keybindings():
     return
 
 if inputFile.endswith(".vim"):
-    print("Vim Bindings File passed in.")
     keybindings = read_vim_keybindings(inputFile)
     print("Key      Command      Action")
     for keys, details in keybindings.items():
