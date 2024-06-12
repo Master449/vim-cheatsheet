@@ -11,6 +11,15 @@ if argc == 1 or argc != 2:
 
 inputFile = sys.argv[1]
 
+# Function: read_vim_keybinds
+#   Input:  File path to .vim keybindings
+#   Output: Dictionary containing keybinds, command used, and the action
+#
+# This function takes the filepath and attempts to read it line by line.
+# It strips the whitespace and newlines, then checks to see if the line 
+# starts with map, nmap, or imap. If the line matches, it splits the 
+# string, and then checks to make sure it matches a similar length to 
+# commands. Then it adds them to the keybindings dict, and continues.
 def read_vim_keybindings(filepath):
     keybindings = {}
     try:
@@ -32,6 +41,7 @@ def read_vim_keybindings(filepath):
 
 
 def read_lua_keybindings():
+    # this ones going to be rough
     return
 
 if inputFile.endswith(".vim"):
